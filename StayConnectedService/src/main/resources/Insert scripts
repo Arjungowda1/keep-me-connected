@@ -1,0 +1,210 @@
+INSERT INTO public.user_info
+(user_id, created_date, email, is_active, "name", "password")
+VALUES(nextval('user_info_seq'), CURRENT_DATE, 'vidyashreemuralidhara@clarivate.com', 'Y', 'Vidyashree', 'Clarivate@1');
+
+INSERT INTO public.user_info
+(user_id, created_date, email, is_active, "name", "password")
+VALUES(nextval('user_info_seq'), CURRENT_DATE, 'arjun.ce@clarivate.com', 'Y', 'Arjun', 'Clarivate@2');
+
+INSERT INTO public.user_info
+(user_id, created_date, email, is_active, "name", "password")
+VALUES(nextval('user_info_seq'), CURRENT_DATE, 'akshay.kumar@clarivate.com', 'Y', 'Akshay', 'Clarivate@3');
+
+INSERT INTO public.user_info
+(user_id, created_date, email, is_active, "name", "password")
+VALUES(nextval('user_info_seq'), CURRENT_DATE, 'divya.patel@clarivate.com', 'Y', 'Divya', 'Clarivate@1');
+
+INSERT INTO public.user_info
+(user_id, created_date, email, is_active, "name", "password")
+VALUES(nextval('user_info_seq'), CURRENT_DATE, 'pawan.raj@clarivate.com', 'Y', 'Pawan', 'Clarivate@1');
+
+INSERT INTO public.user_info
+(user_id, created_date, email, is_active, "name", "password")
+VALUES(nextval('user_info_seq'), CURRENT_DATE, 'ram.kumar@clarivate.com', 'Y', 'Ram', 'Clarivate@1');
+
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'You don't take a photograph, you make it - Ansel Adams', 'Photography', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'Art is not what you see, but what you make others see – Edgar Degas', 'Art', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'Keep calm and let the games begin!', 'Gaming', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'Cooking with love provides food for the soul', 'Cooking', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'Music is the shorthand of emotion', 'Music', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'Take care of your body. It's the only place you live - Jim Rohn', 'Health & Fitness', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'The science of today is the technology of tomorrow - Edward Teller', 'Technology', 'Y');
+
+INSERT INTO public.group_info
+(group_id, created_date, group_description, group_name, is_active)
+VALUES(nextval('group_info_seq'), CURRENT_DATE, 'Feeling bored? Check out some activties planned', 'Abstract', 'Y');
+
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '01-SEPT-2021', 'Addicted to selfies? Here is an oppurtunity to show your talent in clicking creative selfies!', 'Creative Selfie Contest', '5 PM', 'IST', 'Y', 100);
+
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '05-SEPT-2021', 'Addicted to Coding? Here is an oppurtunity to show your tech skills!', 'TechFest', '7 PM', 'IST', 'Y', 200);
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '21-SEPT-2021', 'Cooking expert? Share your unique recipe!', 'LunchTime', '11 AM', 'IST', 'Y', 150);
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '14-OCT-2021', 'Need a break from work? Why dont you try your luck in Sudoku Challenge?', 'SudokuChallene', '8 PM', 'IST', 'Y', 300);
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '09-AUG-2021', 'Love Art? Here is an oppurtunity to show how good you are with paint brush!', 'ArtZone', '3 PM', 'IST', 'Y', 250);
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '09-AUG-2021', 'Is singing your hobby? Here is an oppurtunity to show your singing talent!', 'Me and Music', '4 PM', 'IST', 'Y', 250);
+
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, '17-OCT-2021', 'Want to burn some calories? Try our wlkathon challenge this October!', 'Step up', '8 PM', 'IST', 'Y', 300);
+
+
+INSERT INTO public."event"
+(event_id, created_date, event_date, event_description, event_name, event_time, event_time_timezone, is_active, max_participants)
+VALUES(nextval('event_seq'), CURRENT_DATE, 16-SEPT-2021', 'Bored of work schedule? Time to relax by taking part in Bingo game!', 'BingoTime', '6 PM', 'IST', 'Y', 300);
+
+
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 1, 1);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 2, 7);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 3, 4);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 4, 3);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 5, 2);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 6, 5);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 7, 6);
+
+INSERT INTO public.group_event_mapping
+(id, event_id, group_id)
+VALUES(nextval('group_event_mapping_seq'), 8, 8);
+
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 1, 1);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 1, 5);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 1, 3);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 2, 1);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 2, 4);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 2, 6);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 3, 2);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 3, 3);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 3, 6);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 4, 2);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 4, 4);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 5, 6);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 5, 3);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 6, 4);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 6, 1);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 7, 5);
+
+INSERT INTO public.user_group_mapping
+(id, group_id, user_id)
+VALUES(nextval('user_group_mapping_seq'), 8, 3);
+
+
+
+INSERT INTO public.user_event_mapping
+(id, event_id, user_id)
+VALUES(nextval('user_event_mapping_seq'), 1, 1);
+
+INSERT INTO public.user_event_mapping
+(id, event_id, user_id)
+VALUES(nextval('user_event_mapping_seq'), 2, 5);
+
+
+INSERT INTO public.user_event_mapping
+(id, event_id, user_id)
+VALUES(nextval('user_event_mapping_seq'),6, 3);

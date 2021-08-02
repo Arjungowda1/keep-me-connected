@@ -1,0 +1,110 @@
+create table user_info
+(
+user_id int8,
+name varchar(20),
+email varchar(50),
+password varchar(20),
+created_date timestamp,
+is_active varchar(1),
+CONSTRAINT user_info_pk PRIMARY KEY (user_id)
+);
+
+
+create table group_info
+(
+group_id int8,
+group_name varchar(200),
+group_description varchar(500),
+created_date timestamp,
+is_active varchar(1),
+CONSTRAINT group_pk primary key (group_id)
+);
+
+
+create table event
+(
+event_id int8,
+event_name varchar(100),
+event_description varchar(500),
+event_date timestamp,
+event_time varchar(20),
+event_time_timezone varchar(5),
+max_participants int8,
+created_date timestamp,
+is_active varchar(1),
+CONSTRAINT event_pk primary key(event_id)
+);
+
+
+create table user_group_mapping
+(
+id int8,
+user_id int8,
+group_id int8,
+FOREIGN KEY(user_id) REFERENCES user_info(user_id),
+FOREIGN KEY(group_id) REFERENCES group_info(group_id)
+);
+
+
+alter table user_group_mapping
+add foreign key (user_id) references User_Info(user_id);
+
+alter table user_group_mapping
+add foreign key (group_id) references group_info(group_id);
+
+create table group_event_mapping
+(
+id int8,
+group_id int8,
+event_id int8,
+FOREIGN KEY(group_id) REFERENCES group_info(group_id),
+FOREIGN KEY(event_id) REFERENCES event(event_id)
+);
+
+
+alter table user_event_mapping
+add foreign key (user_id) references User_Info(user_id);
+
+alter table user_event_mapping
+add foreign key (event_id) references event(event_id);
+
+
+create table user_event_mapping
+(
+id int8,
+user_id int8,
+event_id int8,
+FOREIGN KEY(user_id) REFERENCES user_info(user_id),
+FOREIGN KEY(event_id) REFERENCES event(event_id)
+);
+
+alter table group_event_mapping 
+add foreign key (group_id) references group_info(group_id);
+
+alter table group_event_mapping
+add foreign key (event_id) references event(event_id);
+
+create sequence user_info_seq
+increment 1
+start 1;
+
+create sequence group_info_seq
+increment 1
+start 1;
+
+create sequence event_seq
+increment 1
+start 1;
+
+
+create sequence group_event_mapping_seq
+increment 1
+start 1;
+
+create sequence user_group_mapping_seq
+increment 1
+start 1;
+
+create sequence user_event_mapping_seq
+increment 1
+start 1;
